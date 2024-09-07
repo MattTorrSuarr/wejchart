@@ -18,16 +18,275 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(0, 0, 0); /* Set a solid white background */
+}
+h1 {
+  text-align: left;
+  margin: 0; /* Remove auto centering */
+  max-width: 700px;
+  font-size: 100px;
+  margin-top: 20px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+
+.mtext{
+  text-align: left;
+  margin-top: 30px;
+}
+
+
+
+
+
+button {
+  margin-top: 30px;
+  background-color: hsl(0, 0%, 5%);
+  width: 300px;
+  height: 80px;
+  font-weight: bold;
+  border: 1px solid hsl(0, 0%, 13%);
+  border-radius: 15px; /* Adjust this value to change the roundness of the corners */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ffffff, hsl(172, 92%, 24%)); /* Blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+body {
+  background-color: rgb(255, 255, 255); 
+}
+
+
+p{
+  color: #ffffff;
+}
+
+
+
+
+h5{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  margin-top: 430px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+h2{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+body{
+  background: linear-gradient(to right, #000000, hsl(0, 0%, 11%));
+}
+
+
+.expl{
+  max-width: 700px;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+.help{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Adjust the height as needed */
+  color: rgb(255, 255, 255);
+  background-color: rgba(10, 10, 10, 0.8); /* Adjust the alpha value for transparency */
+  border-bottom: 2px solid #1f1f1f;
+  z-index: 1000; /* Ensures the header stays above other content */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.header p {
+  margin: 0;
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+body {
+  padding-top: 80px; /* Matches the height of the header */
+}
+
+
+.help {
+  text-align: center; /* Center all inline content horizontally */
+}
+
+.help h3 {
+  margin-bottom: 20px; /* Space between heading and image */
+}
+
+.help img {
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+
+
+}
+
+
+
+.help img{
+  margin-top: 160px;
+
+}
+
+.help img {
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: -50px; /* Move the image up by reducing margin */
+  margin-left: 770px;
+
+}
+
+
+
+
+.explain {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between image and text */
+  flex-direction: row-reverse; /* Place the image on the right */
+}
+
+.explain-image {
+  /* Optional: add styles for your image if needed */
+}
+
+.explain-text {
+  max-width: 600px; /* Adjust width of text container */
+}
+/* Center the .explain section horizontally */
+.explain-container {
+  display: flex;
+  justify-content: center; /* Center the .explain section */
+}
+
+.explain {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between image and text */
+  flex-direction: row-reverse; /* Place the image on the right */
+}
+
+.explain-container {
+  display: flex;
+  justify-content: center; /* Center the .explain section */
+  margin-bottom: 100px;
+}
+
+.explain {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between image and text */
+  flex-direction: row-reverse; /* Place the image on the right */
+}
+
+.explain-image {
+  margin-top: 350px; /* Add top margin to the image */
+}
+
+.explain-text {
+  max-width: 600px; /* Adjust width of text container */
+}
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Adjust the height as needed */
+  color: rgb(255, 255, 255);
+  background-color: rgba(10, 10, 10, 0.8); /* Adjust the alpha value for transparency */
+  border-top: 2px solid #1f1f1f;
+  z-index: 1000; /* Ensures the footer stays below other content */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.mtext-content {
+  display: flex;
+  justify-content: space-between; /* Aligns text and image with space between */
+  align-items: center; /* Vertically aligns the content */
+  margin-top: 50px;
+}
+
+.text-section {
+  flex: 1;
+  margin-right: 20px; /* Adds space between text and image */
+}
+
+.image-section {
+  flex: 1;
+}
+
+.mtext-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.ptwt{
+  margin-left: 100px;
+}
+
+h1{
+  margin-left: 100px;
+}
+
+.btn5{
+margin-left: 5px;
+}
+
+.btn6{
+  margin-left: 100px;
 }
